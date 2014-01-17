@@ -923,7 +923,7 @@ function Item:build_return_groups()
       end
       --require 'pl.pretty'.dump(ret)
       if not mods then
-         self:error(quote(self.name)..' had no return?')
+         self:error(tools.quote(self.name)..' had no return?')
       end
       group:append({text=ret, type = mods and (mods.type or '') or '',mods = mods})
    end
